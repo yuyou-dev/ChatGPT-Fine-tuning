@@ -41,6 +41,7 @@ pip install -r requirements.txt
 ```
 
 3. **Fine-tuning the Model / 微调模型**:
+
 Navigate to the `scripts/` directory and run the script to preprocess data:
 ```bash
 python preprocess_data.py
