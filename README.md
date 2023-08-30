@@ -1,8 +1,8 @@
-# ChatGPT-Fine-tuning
+# ChatGPT-Fine-tuning / ChatGPT微调指南
 Quick-start guide to fine-tuning ChatGPT using Python. Includes scripts for data preprocessing, model training, and evaluation. 
 快速入门指南: 使用Python微调ChatGPT。包含数据预处理、模型训练和评估脚本。
 
-## Project Structure
+## Project Structure / 项目结构
 
 ```
 chatgpt-finetuning/
@@ -27,20 +27,20 @@ chatgpt-finetuning/
 └── requirements.txt
 ```
 
-## Getting Started
+## Getting Started / 开始
 
-1. **Clone the Repository**:
+1. **Clone the Repository / 克隆仓库**:
 ```bash
 git clone https://github.com/yuyou-dev/chatgpt-fine-tuning.git
 cd chatgpt-fine-tuning
 ```
 
-2. **Install Dependencies**:
+2. **Install Dependencies / 安装依赖**:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Fine-tuning the Model**:
+3. **Fine-tuning the Model / 微调模型**:
 Navigate to the `scripts/` directory and run the script to preprocess data:
 ```bash
 python preprocess_data.py
@@ -54,18 +54,19 @@ Run the fine-tuning script:
 python finetuning.py
 ```
 
-## Running Tests
+## Running Tests / 验证和测试
 
 Navigate to the `tests/` directory and run the desired test script:
 ```bash
 python test_preprocessing.py
 ```
 
-## Contributing
+## Contributing / 贡献
 
 We welcome contributions! Please open an issue or submit a pull request on GitHub.
+我们欢迎各种贡献！请在GitHub上开启一个问题(issue)或提交一个拉取请求(pull request)。
 
-## License
+## License / 许可
 
-[MIT License](LICENSE) or any other license you choose.
+[MIT License](LICENSE)
 
