@@ -2,9 +2,9 @@
 # 创建微调模型
 import requests
 import json
-#这里需要写自己的key
+#这里需要替换成自己的key
 api_key = ''
-#这里需要写upload_data后返回的file_id
+#这里需要填写运行upload_data.py脚本后返回的file_id
 file_id = ''
 
 url = "https://api.openai.com/v1/fine_tuning/jobs"
