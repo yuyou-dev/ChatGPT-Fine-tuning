@@ -58,10 +58,7 @@ python finetuning.py
 
 ## Running Tests / 验证和测试
 
-Navigate to the `tests/` directory and run the desired test script:
-```bash
-python test_preprocessing.py
-```
+Run API test on [PlayGround](https://platform.openai.com/playground)
 
 ## Contributing / 贡献
 
