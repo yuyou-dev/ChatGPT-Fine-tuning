@@ -66,6 +66,10 @@ python finetuning.py
 
 Run API test on [PlayGround](https://platform.openai.com/playground)
 
+## Colab运行
+
+[Open Notebook in Colab](https://colab.research.google.com/github/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/fine-tuning.ipynb)
+
 ## Contributing / 贡献
 
 We welcome contributions! Please open an issue or submit a pull request on GitHub.
