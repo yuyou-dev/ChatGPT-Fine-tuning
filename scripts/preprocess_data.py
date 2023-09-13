@@ -6,7 +6,6 @@ with open('../data/raw/test_datasets.jsonl', 'r') as file:
     for line in file:
         item = json.loads(line)
         raw_data.append(item)
-        break
 
 # 随机从6000条数据中取出100条做训练测试
 raw_messages = random.sample(raw_data,100)
