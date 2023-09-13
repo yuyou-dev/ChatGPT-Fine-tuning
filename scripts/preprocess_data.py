@@ -1,38 +1,31 @@
-# 把txt文件处理成我们需要的jsonl的形式
+# -*- coding: utf-8 -*-
 import json
+import random
+
+def transform_jsonl(input_file_path, output_file_path):
+    entries = []
+    with open(input_file_path, 'r') as file:
+        for line in file:
+            entry = json.loads(line)
+            entries.append(entry)
+
+    # 随机抽取100个条目
+    sampled_entries = random.sample(entries, 100)
+
+    with open(output_file_path, 'w') as outfile:
+        for entry in sampled_entries:
+            messages = []
+            messages.append({"role": "system", "content": "你是一个医疗助手"})
+            user_message = {"role": "user", "content": entry["questions"]}
+            assistant_message = {"role": "assistant", "content": entry["answers"]}
+            messages.extend([user_message, assistant_message])
+            result = {"messages": messages}
+            json.dump(result, outfile, ensure_ascii=False)
+            outfile.write('\n')
+
 # 准备好的txt文件
-input_path = "../data/raw/training_data.txt"
+input_file_path = "../data/raw/test_datasets.jsonl"
 # 需要输出的jsonl文件地址
-output_path = "../data/processed/chat_data.jsonl"
+output_file_path = "../data/processed/chat_data.jsonl"
 
-# 打开文件
-with open(f'{input_path}', 'r', encoding='utf-8') as file:
-    content = file.read()
-# 以三个连续的换行符分割成段落
-paragraphs_level1 = content.split('\n\n\n')
-
-# 构建消息列表
-messages = []
-
-for i, paragraph_level1 in enumerate(paragraphs_level1, start=1):
-    # 在每个段落内再以两个连续的换行符分割内容
-    paragraphs_level2 = paragraph_level1.split('\n\n')
-
-    # 初始化消息对象
-    message = {"messages": []}
-
-    # 添加系统消息
-    message["messages"].append({"role": "system", "content": "你是一名翻译"})
-
-    # 添加第二级段落内容到不同角色的消息
-    for j, paragraph_level2 in enumerate(paragraphs_level2, start=1):
-        role = "user" if j % 2 == 1 else "assistant"
-        message["messages"].append({"role": role, "content": paragraph_level2})
-
-    # 将消息对象添加到消息列表
-    messages.append(message)
-
-# 将消息列表写入到 chat_data.jsonl 文件
-with open(f'{output_path}', 'w', encoding='utf-8') as jsonl_file:
-    for message in messages:
-        jsonl_file.write(json.dumps(message, ensure_ascii=False) + '\n')
+transform_jsonl(input_file_path, output_file_path)
