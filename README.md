@@ -21,9 +21,8 @@ chatgpt-finetuning/
 │   └── finetuning.py
 │
 ├── notebooks/
-│   └── finetuning_demo.ipynb
+│   └── fine-tuning.ipynb
 │
-├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
