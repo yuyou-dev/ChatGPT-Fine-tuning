@@ -1,11 +1,8 @@
-
-# 创建微调模型
 import requests
 import json
-#这里需要替换成自己的key
-api_key = ''
-#这里需要填写运行upload_data.py脚本后返回的file_id
-file_id = ''
+
+api_key = ''                                # 从开发者后台获取的api_key
+file_id = ''                                # 从file接口返回的文件id
 
 url = "https://api.openai.com/v1/fine_tuning/jobs"
 headers = {
@@ -18,7 +15,7 @@ data = {
 }
 
 response = requests.post(url, headers=headers, json=data)
-print(response.text)
-response_json = json.loads(response.text)  # 将响应文本转换为 JSON 字典
-fine_tuning_job_id = response_json["id"]
-print(fine_tuning_job_id) #当前微调模型的id，可用于后续查看模型的状态
+print(response.text)                        # 查看响应内容
+response_json = json.loads(response.text)   # 将响应文本转换为 JSON 字典
+fine_tuning_job_id = response_json["id"]    # 获取微调任务id
+print(fine_tuning_job_id)                   # 当前微调模型的id，可用于后续查看模型的状态
