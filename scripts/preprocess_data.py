@@ -17,5 +17,5 @@ with open('../data/processed/chat_data.jsonl', 'w') as data_file:
         data["messages"].append({"role": "system", "content": "你是一个医疗助手"})
         data["messages"].append({"role": "user", "content": item["questions"]})
         data["messages"].append({"role": "assistant", "content": item["answers"]})
-        json.dump({"messages": data}, data_file, ensure_ascii=False)
+        json.dump(data, data_file, ensure_ascii=False)
         data_file.write('\n')
