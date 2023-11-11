@@ -65,11 +65,12 @@ python3 finetuning.py
 
 Run API test on [PlayGround](https://platform.openai.com/playground)
 
-## Colab运行
+## Colab 微调
 
 - 1.[微调基础用例](https://colab.research.google.com/github/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/fine-tuning.ipynb)
-- 2.[微调实战1-训练指定格式和字段的输出](https://colab.research.google.com/github/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/fine-tuning-format.ipynb)
-
+- 2.[微调实战-训练指定格式和字段的输出](https://colab.research.google.com/github/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/fine-tuning-format.ipynb)
+- 3.[微调实战-训练指定格式和字段的输出-不同方式的对比](https://colab.research.google.com/github/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/fine-tuning-format-comparison.ipynb)
+  
 ## Contributing / 贡献
 
 We welcome contributions! Please open an issue or submit a pull request on GitHub.
