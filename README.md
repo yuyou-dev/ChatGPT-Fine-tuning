@@ -21,7 +21,10 @@ chatgpt-finetuning/
 │   └── finetuning.py
 │
 ├── notebooks/
-│   └── fine-tuning.ipynb
+│   ├── fine-tuning.ipynb
+│   ├── fine-tuning-format.ipynb
+│   ├── fine-tuning-format-comparison.ipynb
+│   └── 视频解说.ipynb
 │
 ├── README.md
 └── requirements.txt
