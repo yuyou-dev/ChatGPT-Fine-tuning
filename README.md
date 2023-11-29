@@ -75,7 +75,7 @@ Run API test on [PlayGround](https://platform.openai.com/playground)
 - 3.[微调实战-训练指定格式和字段的输出-不同方式的对比](https://colab.research.google.com/github/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/fine-tuning-format-comparison.ipynb)
 
 ## 其他GPT技术
-- 1.[GPT-4v实现AI视频解说 - Colab](https://github.com/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/视频解说.ipynb)
+- 1.[GPT-4v实现AI视频解说 - Colab]([https://github.com/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/视频解说.ipynb](https://colab.research.google.com/github/yuyou-dev/ChatGPT-Fine-tuning/blob/main/notebooks/video-commentary.ipynb))
   
 ## Contributing / 贡献
 
